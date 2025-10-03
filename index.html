@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Castração</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cadastro de Animais para Castração</h1>
+
+  <form id="formCadastro">
+    <h2>Dados do Tutor</h2>
+    <label>Nome do Tutor:</label>
+    <input type="text" id="tutorNome" required><br>
+
+    <label>Telefone:</label>
+    <input type="tel" id="tutorTelefone" required><br>
+
+    <h2>Dados do Animal</h2>
+    <label>Nome do Animal:</label>
+    <input type="text" id="animalNome" required><br>
+
+    <label>Espécie:</label>
+    <input type="text" id="animalEspecie" required><br>
+
+    <label>Raça:</label>
+    <input type="text" id="animalRaca"><br>
+
+    <label>Idade:</label>
+    <input type="number" id="animalIdade"><br>
+
+    <label>Sexo:</label>
+    <select id="animalSexo">
+      <option value="Macho">Macho</option>
+      <option value="Fêmea">Fêmea</option>
+    </select><br>
+
+    <label>Peso (kg):</label>
+    <input type="number" step="0.1" id="animalPeso"><br>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <h2>Cadastros</h2>
+  <div id="listaCadastros"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
