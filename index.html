@@ -43,7 +43,27 @@
 
   <h2>Cadastros</h2>
   <div id="listaCadastros"></div>
+ 
+  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
 
-  <script src="script.js"></script>
+<script>
+    // SEU OBJETO firebaseConfig COMPLETO AQUI
+    const firebaseConfig = {
+      apiKey: "AIzaSy...",
+      authDomain: "cadastro-dic7.firebaseapp.com",
+      projectId: "cadastro-dic7",
+      // ... o resto das chaves ...
+    };
+
+    // Inicializa o Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Inicializa o Cloud Firestore para uso no código JS
+    const db = firebase.firestore();
+</script>
+
+<script src="script.js"></script>
+  
 </body>
 </html>
