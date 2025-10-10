@@ -1,4 +1,4 @@
-function salvarCadastro(dados) {
+wfunction salvarCadastro(dados) {
     // Usa a variável 'db' definida no index.html
     db.collection("Animais") // Define o nome da coleção no Firestore
         .add(dados) // Adiciona os dados do formulário
@@ -18,14 +18,14 @@ document.getElementById("formCadastro").addEventListener("submit", function(e) {
     
     // Captura os valores de TODOS os campos do seu formulário
     const dados = {
-        tutorNome: document.getElementById("Tutor").value,
-        tutorTelefone: document.getElementById("Telefone").value,
-        animalNome: document.getElementById("Animal").value,
-        animalEspecie: document.getElementById("Especie").value,
-        animalRaca: document.getElementById("Raca").value,
-        animalIdade: document.getElementById("Idade").value,
-        animalSexo: document.getElementById("Sexo").value,
-        animalPeso: document.getElementById("Peso").value,
+        Tuto: document.getElementById("tutorNome").value,
+        tutorTelefone: document.getElementById("tutorTelefone").value,
+        animalNome: document.getElementById("animalNome").value,
+        animalEspecie: document.getElementById("animalEspecie").value,
+        animalRaca: document.getElementById("animalRaca").value,
+        animalIdade: document.getElementById("animalIdade").value,
+        animalSexo: document.getElementById("animalSexo").value,
+        animalPeso: document.getElementById("animalPeso").value,
     };
 
     // Chama a função que salva no Firebase (que você já corrigiu)
