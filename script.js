@@ -18,7 +18,7 @@ document.getElementById("formCadastro").addEventListener("submit", function(e) {
     
     // Captura os valores de TODOS os campos do seu formulário
     const dados = {
-        Tuto: document.getElementById("tutorNome").value,
+        tutorNome: document.getElementById("tutorNome").value,
         tutorTelefone: document.getElementById("tutorTelefone").value,
         animalNome: document.getElementById("animalNome").value,
         animalEspecie: document.getElementById("animalEspecie").value,
